@@ -17,7 +17,7 @@ Built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS v4**
 
 | Layer       | Technology                          |
 | ----------- | ----------------------------------- |
-| Framework   | Next.js 15 (App Router, Turbopack)  |
+| Framework   | Next.js 15 (App Router)             |
 | UI          | React 19, TypeScript                |
 | Styling     | Tailwind CSS v4 (CSS-first config)  |
 | Forms       | React Hook Form                     |
@@ -120,11 +120,26 @@ The site supports both light and dark themes:
 
 ## Deployment
 
-Deploy to [Vercel](https://vercel.com) for the best Next.js experience:
+### Netlify (Recommended)
+
+This project is configured for [Netlify](https://www.netlify.com) deployment with the `@netlify/plugin-nextjs` plugin.
+
+1. Connect your GitHub repo at [app.netlify.com](https://app.netlify.com)
+2. Build settings auto-populate from `netlify.toml`:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `.next`
+3. Add your environment variables under **Site settings > Environment variables**
+4. Deploy -- Netlify auto-deploys on every push to `main`
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ItsKaranzzz/hill-rides-nainital)
+
+### Vercel
+
+Alternatively, deploy to [Vercel](https://vercel.com):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ItsKaranzzz/hill-rides-nainital)
 
-Or deploy to any platform that supports Node.js:
+### Self-hosted
 
 ```bash
 npm run build
